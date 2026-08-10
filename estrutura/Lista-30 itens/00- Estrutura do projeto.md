@@ -1,7 +1,7 @@
 ## FASE 1 — Fundação do Projeto
 
 1. Definição do escopo do projeto ✅
-2. Levantamento de riscos e limitações
+2. Levantamento de riscos e limitações✅
 3. Plano de contingência
 4. Definição do problema que o sistema resolve
 5. Definição dos objetivos funcionais
