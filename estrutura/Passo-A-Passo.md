@@ -704,7 +704,7 @@ O objetivo é facilitar:
 
 O GitHub será utilizado como ferramenta de versionamento e colaboração do projeto, e o desenvolvimento será realizado com integração ao VS Code.
 
-**Status: AMBIENTE PREPARADO; ESTRUTURA A DEFINIR.**
+**Status: CONCEITO DEFINIDO; ESTRUTURA A DESENVOLVER.**
 
 ---
 
@@ -788,91 +788,327 @@ A documentação deverá acompanhar o desenvolvimento para evitar que informaç�
 
 ---
 
-# FASE 8 — FINALIZAÇÃO
+# FASE 8 — DESENVOLVIMENTO
 
-## 36. Planejamento da documentação do TCC
+## 36. Configuração do ambiente de desenvolvimento
 
-Será organizada a documentação acadêmica exigida pela instituição e pela orientação do TCC.
+Será configurado o ambiente necessário para o desenvolvimento do sistema.
 
-Ela deverá apresentar, conforme as exigências da escola:
+Deverão ser definidos e configurados:
+
+* Visual Studio Code;
+* Git e GitHub;
+* tecnologias utilizadas no projeto;
+* extensões necessárias;
+* ambiente de execução;
+* ferramentas de teste;
+* demais recursos necessários ao desenvolvimento.
+
+O objetivo desta etapa é garantir que todos os integrantes responsáveis pela programação possuam um ambiente de desenvolvimento funcional e padronizado.
+
+**Status: A DESENVOLVER.**
+
+---
+
+## 37. Criação da estrutura inicial do projeto
+
+Será criada a estrutura inicial de arquivos e pastas do sistema, seguindo a organização definida no planejamento técnico.
+
+Nesta etapa serão configurados:
+
+* repositório do projeto;
+* estrutura de pastas;
+* arquivos iniciais;
+* configuração do projeto;
+* conexão com o sistema de versionamento;
+* organização inicial do código.
+
+A estrutura poderá ser ajustada durante o desenvolvimento caso novas necessidades sejam identificadas.
+
+**Status: A DESENVOLVER.**
+
+---
+
+## 38. Desenvolvimento do frontend
+
+Será desenvolvida a interface visual da plataforma com base nas telas e na identidade visual definidas anteriormente.
+
+Serão implementados inicialmente os elementos essenciais do sistema, incluindo:
+
+* páginas;
+* menus;
+* formulários;
+* botões;
+* cartões;
+* questionários;
+* resultados;
+* navegação;
+* componentes reutilizáveis;
+* responsividade.
+
+O desenvolvimento deverá priorizar inicialmente as funcionalidades pertencentes ao MVP.
+
+**Status: A DESENVOLVER.**
+
+---
+
+## 39. Desenvolvimento da lógica do sistema
+
+Será implementada a lógica responsável pelo funcionamento das principais funcionalidades da plataforma.
+
+Poderão fazer parte desta etapa:
+
+* processamento das respostas;
+* cálculo dos resultados;
+* identificação de compatibilidades;
+* geração das recomendações;
+* funcionamento dos simulados;
+* cálculo de desempenho;
+* validações;
+* regras de negócio.
+
+A implementação deverá seguir as metodologias e regras definidas nas fases anteriores.
+
+**Status: A DESENVOLVER.**
+
+---
+
+## 40. Implementação do banco de dados
+
+Será implementado o banco de dados planejado nas etapas técnicas anteriores.
+
+Deverão ser criadas as estruturas necessárias para armazenar, conforme definido:
+
+* usuários;
+* respostas;
+* resultados;
+* perguntas;
+* alternativas;
+* áreas profissionais;
+* simulados;
+* questões;
+* tentativas;
+* desempenho;
+* demais informações necessárias.
+
+A implementação deverá respeitar o modelo de entidades e relacionamentos definido anteriormente.
+
+**Status: A DESENVOLVER.**
+
+---
+
+## 41. Integração entre sistema e banco de dados
+
+Será realizada a integração entre a aplicação e o banco de dados.
+
+O sistema deverá ser capaz de:
+
+* enviar informações;
+* consultar informações;
+* atualizar dados;
+* armazenar respostas;
+* recuperar resultados;
+* manter históricos;
+* controlar os dados de acordo com as permissões definidas.
+
+A integração deverá ser testada antes da utilização definitiva das funcionalidades.
+
+**Status: A DESENVOLVER.**
+
+---
+
+## 42. Implementação das funcionalidades
+
+Serão implementadas as funcionalidades definidas como necessárias para o funcionamento do sistema.
+
+A implementação seguirá a priorização estabelecida anteriormente, começando pelas funcionalidades do MVP e posteriormente avançando para funcionalidades intermediárias e extras, caso o prazo permita.
+
+Cada funcionalidade deverá ser desenvolvida, testada e revisada antes de ser considerada concluída.
+
+**Status: A DESENVOLVER.**
+
+---
+
+## 43. Testes e correções
+
+Após a implementação das funcionalidades, serão realizados testes para identificar erros, inconsistências e problemas de usabilidade.
+
+Serão verificados aspectos como:
+
+* funcionamento das funcionalidades;
+* cálculos;
+* formulários;
+* questionário;
+* resultados;
+* simulados;
+* banco de dados;
+* navegação;
+* responsividade;
+* tratamento de erros.
+
+Os problemas encontrados deverão ser registrados, corrigidos e testados novamente.
+
+**Status: A DESENVOLVER.**
+
+---
+
+## 44. Refinamento da interface e experiência do usuário
+
+Após o funcionamento das principais funcionalidades, a interface será revisada para melhorar a experiência de utilização.
+
+Poderão ser realizados ajustes em:
+
+* layout;
+* espaçamentos;
+* cores;
+* tipografia;
+* responsividade;
+* navegação;
+* mensagens;
+* feedbacks;
+* acessibilidade;
+* organização das informações.
+
+O objetivo será garantir que o sistema seja funcional e também compreensível e agradável de utilizar.
+
+**Status: A DESENVOLVER.**
+
+---
+
+# FASE 9 — FINALIZAÇÃO
+
+## 45. Documentação do TCC
+
+Será consolidada a documentação acadêmica do projeto, reunindo as decisões, metodologia, desenvolvimento e resultados obtidos.
+
+A documentação deverá seguir as exigências da instituição e da professora responsável pelo TCC.
+
+Deverão ser incluídos, conforme necessário:
 
 * contextualização;
 * problema;
-* hipótese;
+* justificativa;
 * objetivos;
 * metodologia;
+* fundamentação;
 * desenvolvimento;
 * resultados;
 * conclusões;
 * referências;
-* demais elementos solicitados.
+* demais elementos exigidos.
 
-A documentação será desenvolvida paralelamente ao projeto, conforme orientação da professora responsável.
+A documentação deverá ser construída ao longo do projeto e consolidada nesta etapa.
 
 **Status: EM DESENVOLVIMENTO AO LONGO DO PROJETO.**
 
 ---
 
-## 37. Planejamento da apresentação do projeto
+## 46. Documentação técnica do sistema
 
-A apresentação final deverá demonstrar o problema identificado, a solução desenvolvida, seu funcionamento e os resultados obtidos.
+Será consolidada a documentação técnica necessária para explicar o funcionamento e a estrutura do sistema.
 
-Deverão ser planejados:
+Deverão ser documentados, conforme aplicável:
 
-* conteúdo da apresentação;
-* divisão das falas;
-* demonstração do sistema;
-* explicação das principais decisões;
-* apresentação dos resultados;
-* limitações;
-* possíveis melhorias futuras.
+* arquitetura;
+* tecnologias utilizadas;
+* estrutura de pastas;
+* banco de dados;
+* entidades e relacionamentos;
+* regras de negócio;
+* instalação;
+* configuração;
+* funcionamento;
+* decisões técnicas;
+* integrações.
 
-A apresentação deverá demonstrar não apenas que o sistema funciona, mas que o grupo compreende as decisões tomadas durante seu desenvolvimento.
-
-**Status: A DESENVOLVER PRÓXIMO À FINALIZAÇÃO.**
+**Status: A DESENVOLVER.**
 
 ---
 
-# ESTADO ATUAL DO PROJETO
+## 47. Manual do usuário
 
-### Já definido
+Será elaborado um manual destinado aos usuários finais da plataforma.
 
-* proposta geral;
-* público principal;
-* escopo;
-* quatro pilares da análise;
-* importância da relação entre interesse e habilidade;
-* conceito de trilha de desenvolvimento;
-* ideia de caminhos acadêmicos;
-* preparação para processos seletivos;
-* necessidade de evitar recomendações deterministas;
-* necessidade de diferenciar habilidade de simples experiência;
-* GitHub como ferramenta de versionamento;
-* VS Code como ambiente de desenvolvimento.
+O manual deverá explicar de forma simples:
 
-### Ainda em definição
+* como acessar o sistema;
+* como realizar cadastro e login;
+* como utilizar as principais funcionalidades;
+* como responder ao questionário;
+* como interpretar os resultados;
+* como realizar os simulados;
+* como consultar o desempenho;
+* como encerrar a sessão.
 
-* riscos restantes;
-* plano de contingência;
-* metodologia exata de análise;
-* perfis/áreas profissionais;
-* perguntas;
-* pontuações;
-* fórmula de compatibilidade;
-* recomendações;
-* simulados;
-* requisitos;
-* telas;
+As instruções deverão ser acompanhadas de imagens ou capturas de tela quando isso facilitar a compreensão.
+
+**Status: A DESENVOLVER.**
+
+---
+
+## 48. Preparação da apresentação do projeto
+
+Será preparada a apresentação final do TCC.
+
+Deverão ser organizados:
+
+* conteúdo dos slides;
+* divisão das falas entre os integrantes;
+* apresentação do problema;
+* objetivos;
+* metodologia;
+* funcionamento do sistema;
+* demonstração prática;
+* resultados;
+* limitações;
+* possíveis melhorias futuras.
+
+A apresentação deverá demonstrar que os integrantes compreendem o projeto e as decisões tomadas durante seu desenvolvimento.
+
+**Status: A DESENVOLVER.**
+
+---
+
+## 49. Testes finais e validação
+
+Será realizada uma última rodada de testes antes da entrega.
+
+Serão verificados:
+
+* funcionalidades principais;
+* integração entre os componentes;
 * banco de dados;
-* arquitetura;
-* tecnologias definitivas;
-* implementação;
-* testes.
+* segurança e permissões;
+* responsividade;
+* usabilidade;
+* tratamento de erros;
+* consistência dos resultados;
+* funcionamento em diferentes navegadores;
+* possíveis problemas que ainda não tenham sido identificados.
 
-### Regra geral do projeto
+Também poderá ser realizada uma validação com usuários para verificar se o sistema atende ao objetivo proposto.
 
-O Projeto1 deverá sempre priorizar **viabilidade, coerência e utilidade real** em vez de quantidade de funcionalidades.
+**Status: A DESENVOLVER.**
 
-Uma funcionalidade só deverá permanecer no projeto se houver uma justificativa clara para sua existência, se puder ser implementada dentro das capacidades e do prazo disponíveis e se contribuir para o objetivo principal da plataforma.
+---
 
-O sistema deverá orientar o estudante, e não determinar seu futuro profissional.
+## 50. Entrega do projeto
+
+Será realizada a preparação e entrega da versão definitiva do Projeto1.
+
+Antes da entrega deverão ser conferidos:
+
+* funcionamento do sistema;
+* código-fonte;
+* banco de dados;
+* documentação do TCC;
+* documentação técnica;
+* manual do usuário;
+* apresentação;
+* repositório do GitHub;
+* arquivos necessários para execução;
+* demais materiais solicitados pela instituição.
+
+Após a conferência, será realizada a entrega oficial do projeto.
+
+**Status: A DESENVOLVER.**
