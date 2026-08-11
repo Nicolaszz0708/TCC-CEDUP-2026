@@ -54,7 +54,24 @@
 34. Planejamento de validações e tratamento de erros
 35. Planejamento da documentação técnica
 
-## FASE 8 — Finalização
+## FASE 8 — Desenvolvimento
 
-36. Planejamento da documentação do TCC
-37. Planejamento da apresentação do projeto
+36. Configuração do ambiente de desenvolvimento
+37. Criação da estrutura inicial do projeto
+38. Desenvolvimento do frontend
+39. Desenvolvimento da lógica do sistema
+40. Implementação do banco de dados
+41. Integração entre sistema e banco de dados
+42. Implementação das funcionalidades
+43. Testes e correções
+44. Refinamento da interface e experiência do usuário
+
+## FASE 9 — Finalização
+
+45. Documentação do TCC
+46. Documentação técnica do sistema
+47. Manual do usuário
+48. Preparação da apresentação do projeto
+49. Testes finais e validação
+50. Entrega do projeto
+
