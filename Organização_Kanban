@@ -1,0 +1,142 @@
+E o Kanban vira nosso painel de controle.
+
+16. Estrutura do Kanban
+
+Eu criaria estas colunas:
+
+BACKLOG
+
+Tudo que ainda precisa ser feito.
+
+↓
+
+PRÓXIMAS
+
+Tarefas que serão feitas em breve.
+
+↓
+
+EM ANDAMENTO
+
+Cada pessoa pega uma tarefa.
+
+↓
+
+REVISÃO
+
+Terminou, mas outra pessoa precisa conferir.
+
+↓
+
+CONCLUÍDO
+
+Foi feito e revisado.
+
+17. E eu colocaria etiquetas
+
+Por exemplo:
+
+DOCUMENTAÇÃO
+
+FRONTEND
+
+BACKEND
+
+BANCO
+
+UX/UI
+
+TESTE
+
+PESQUISA
+
+URGENTE
+
+Isso permite olhar para o Kanban e saber imediatamente:
+
+"Ah, essa tarefa é da documentação."
+
+ou
+
+"Essa é minha."
+
+18. Divisão inicial dos 5 integrantes
+
+Eu não faria:
+
+Nicolas = programador
+Guriz 1 = programador
+Guriz 2 = programador
+Menina 1 = documentação
+Menina 2 = documentação
+
+de forma absolutamente rígida.
+
+Porque vocês podem criar gargalos.
+
+Eu faria:
+
+Você — Coordenação técnica
+arquitetura;
+decisões técnicas;
+integração;
+GitHub;
+programação;
+organização do desenvolvimento.
+Guriz 1 — Desenvolvimento
+frontend;
+componentes;
+páginas;
+responsividade.
+Guriz 2 — Lógica
+JavaScript;
+questionário;
+resultados;
+simulados;
+regras do sistema.
+Menina 1 — Documentação
+documentação do projeto;
+requisitos;
+metodologia;
+textos;
+referências.
+Menina 2 — Documentação + validação
+documentação;
+manual;
+testes com usuários;
+revisão textual;
+organização do TCC.
+
+Mas todos podem revisar o trabalho dos outros.
+
+19. Uma regra que eu colocaria no Kanban
+
+Toda tarefa precisa ter:
+
+Responsável
+
+Prazo
+
+Descrição
+
+Critério de conclusão
+
+Por exemplo:
+
+Implementar cálculo do resultado vocacional
+
+Responsável: Guriz 2
+Prazo: 14/09
+Categoria: Backend/Lógica
+
+Descrição:
+
+Implementar o cálculo das pontuações obtidas no questionário.
+
+Critério:
+
+Ao finalizar o questionário, o sistema deve calcular as pontuações e identificar o perfil correspondente.
+
+Isso é MUITO melhor do que uma tarefa simplesmente chamada:
+
+"Fazer questionário"
