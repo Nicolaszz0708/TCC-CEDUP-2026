@@ -3,7 +3,7 @@
 1. Definição do escopo do projeto ✅
 2. Levantamento de riscos e limitações✅
 3. Plano de contingência
-4. Definição do problema que o sistema resolve
+4. Definição do problema que o sistema resolve✅
 5. Definição dos objetivos funcionais
 6. Definição do público-alvo e personas
 7. Definição do diferencial do projeto
