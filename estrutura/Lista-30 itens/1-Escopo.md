@@ -236,7 +236,7 @@ O sistema deverá funcionar como **uma ferramenta de apoio à orientação e pre
 
 Após as discussões realizadas, o escopo do Projeto1 foi definido da seguinte forma:
 
-> **Desenvolver uma plataforma digital voltada a estudantes do ensino médio que analise seus interesses, habilidades, competências e preferências de ambiente de trabalho para identificar áreas profissionais compatíveis com seu perfil e apresentar possíveis trilhas de desenvolvimento, formação e preparação para o mercado de trabalho, incluindo recursos de simulação de processos seletivos e feedback de desempenho.**
+> **Desenvolver uma plataforma digital voltada a estudantes do ensino médio que analise seus interesses, habilidades, competências e preferências de ambiente de trabalho para identificar áreas profissionais compatíveis com seu perfil e apresentar possíveis trilhas de desenvolvimento, formação e preparação para o mercado de trabalho, incluindo recursos de simulação de processos seletivos, feedback de desempenho e materiais de preparação acadêmica e profissional, como orientação para elaboração de currículo e preparação para redação.**
 
 A plataforma não deverá determinar uma profissão específica para o estudante. Seu objetivo será oferecer **orientação baseada em seu perfil atual**, apresentando possibilidades e caminhos que possam ser explorados e desenvolvidos pelo próprio usuário.
 
