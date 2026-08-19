@@ -6,7 +6,7 @@
 4. Definição do problema que o sistema resolve✅
 5. Definição dos objetivos funcionais✅
 6. Definição do público-alvo e pessoas✅
-7. Definição do diferencial do projeto
+7. Definição do diferencial do projeto✅
 
 ## FASE 2 — Planejamento das Funcionalidades
 
