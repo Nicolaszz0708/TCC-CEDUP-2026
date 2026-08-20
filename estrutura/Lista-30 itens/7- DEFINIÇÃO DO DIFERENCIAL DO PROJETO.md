@@ -1,0 +1,190 @@
+# 7. DEFINIÇÃO DO DIFERENCIAL DO PROJETO
+
+## 7.1 Objetivo da definição
+
+A definição do diferencial do projeto tem como objetivo estabelecer quais características tornam o Projeto1 diferente de outras soluções que possam apresentar conteúdos relacionados à orientação profissional.
+
+Essa definição será utilizada como referência para as decisões relacionadas às funcionalidades, análise do perfil, apresentação dos resultados e construção das trilhas de desenvolvimento.
+
+O diferencial deverá estar diretamente relacionado ao propósito definido para a plataforma e ser viável dentro do escopo estabelecido para o projeto.
+
+---
+
+## 7.2 Diferencial principal
+
+O principal diferencial do Projeto1 será a proposta de **não limitar a orientação profissional à indicação de uma profissão ou à apresentação de um resultado baseado em um teste**.
+
+A plataforma deverá analisar diferentes aspectos do perfil do estudante e utilizar essas informações para identificar **áreas profissionais compatíveis**, apresentando também possíveis caminhos de desenvolvimento e preparação.
+
+Dessa forma, o sistema não deverá responder simplesmente:
+
+> "Qual profissão você deve seguir?"
+
+Em vez disso, deverá auxiliar o estudante a compreender:
+
+> "Quais áreas podem apresentar compatibilidade com meu perfil, por que existe essa compatibilidade e o que posso fazer para me desenvolver?"
+
+---
+
+## 7.3 Orientação baseada em áreas
+
+Uma das principais características do Projeto1 será a utilização de **áreas profissionais** como resultado da análise.
+
+O sistema não deverá determinar uma profissão específica como resposta definitiva.
+
+Uma mesma área poderá apresentar diferentes possibilidades de atuação e formação, permitindo que o estudante conheça alternativas antes de tomar decisões relacionadas ao seu futuro profissional.
+
+Essa abordagem deverá reduzir o caráter determinista da orientação e permitir que o estudante tenha maior liberdade para explorar diferentes possibilidades.
+
+---
+
+## 7.4 Análise de diferentes características
+
+Outro diferencial será a análise conjunta de diferentes aspectos do perfil do estudante.
+
+A plataforma deverá considerar quatro pilares principais:
+
+* interesses;
+* habilidades;
+* competências;
+* preferências de ambiente de trabalho.
+
+A utilização desses diferentes aspectos deverá permitir uma análise mais ampla do perfil, evitando que a recomendação seja baseada exclusivamente em uma única característica.
+
+---
+
+## 7.5 Relação entre interesse e habilidade
+
+A relação entre **interesse e habilidade** será um dos elementos de maior importância para a diferenciação do Projeto1.
+
+O sistema deverá ser capaz de identificar situações em que o estudante demonstra interesse por uma área, mas ainda possui pouca habilidade ou experiência relacionada.
+
+Nesse caso, a plataforma poderá apresentar um caminho voltado principalmente à exploração e ao desenvolvimento.
+
+Por outro lado, quando o estudante apresentar interesse acompanhado de habilidades e experiências, poderá receber orientações relacionadas ao aperfeiçoamento e à preparação para oportunidades mais avançadas.
+
+Também deverá ser considerada a situação em que o estudante possui determinada habilidade, mas demonstra pouco interesse pela área.
+
+Dessa forma, a plataforma não deverá considerar automaticamente que uma habilidade significa que determinada área é adequada para o estudante.
+
+---
+
+## 7.6 Recomendações de acordo com o momento do estudante
+
+O Projeto1 deverá considerar que estudantes com interesses semelhantes podem estar em momentos diferentes de preparação.
+
+Um estudante que esteja apenas começando a conhecer determinada área poderá receber orientações diferentes de outro que já possua cursos, experiências, projetos ou habilidades relacionadas.
+
+As recomendações deverão, portanto, considerar a **situação atual do estudante**.
+
+Essa característica permitirá que a plataforma apresente caminhos mais adequados ao nível de preparação identificado, evitando orientações excessivamente genéricas.
+
+---
+
+## 7.7 Trilha de desenvolvimento
+
+O resultado da análise deverá ser utilizado como ponto de partida para a construção de uma **trilha de desenvolvimento profissional**.
+
+A lógica geral da plataforma poderá ser representada da seguinte forma:
+
+**Perfil do estudante → áreas compatíveis → situação atual → caminho possível → desenvolvimento → preparação**
+
+A trilha poderá apresentar diferentes possibilidades, de acordo com as características identificadas.
+
+Entre essas possibilidades poderão estar:
+
+* conhecer melhor determinada área;
+* realizar atividades introdutórias;
+* desenvolver habilidades;
+* buscar cursos;
+* realizar projetos;
+* adquirir experiência prática;
+* construir portfólio;
+* buscar formação;
+* preparar-se para oportunidades profissionais.
+
+O objetivo será apresentar possibilidades de desenvolvimento, e não estabelecer uma trajetória obrigatória.
+
+---
+
+## 7.8 Integração entre orientação e preparação
+
+Outro diferencial do Projeto1 será a tentativa de integrar **orientação profissional e preparação para o mercado de trabalho** em uma mesma plataforma.
+
+Além de conhecer áreas compatíveis com seu perfil, o estudante poderá utilizar recursos destinados à preparação para situações que poderá encontrar durante sua entrada no mercado.
+
+Entre os recursos previstos estão:
+
+* simulados;
+* simulações de processos seletivos;
+* feedbacks de desempenho;
+* orientação para elaboração de currículo;
+* preparação para redação;
+* materiais de preparação acadêmica e profissional.
+
+Dessa forma, o projeto busca acompanhar o estudante não apenas na descoberta de possibilidades, mas também em etapas posteriores de desenvolvimento e preparação.
+
+---
+
+## 7.9 Feedback e acompanhamento
+
+A possibilidade de acompanhar o desempenho também poderá contribuir para o diferencial da plataforma.
+
+Nos recursos de preparação, como simulados e processos seletivos, o estudante poderá receber informações sobre seu desempenho e identificar aspectos que podem ser melhorados.
+
+O objetivo será transformar o resultado de uma atividade em uma oportunidade de aprendizado e desenvolvimento.
+
+Essa abordagem poderá permitir que o estudante perceba sua evolução ao longo da utilização da plataforma.
+
+---
+
+## 7.10 Uso responsável da inteligência artificial
+
+A utilização de inteligência artificial não será considerada um diferencial simplesmente por estar presente no sistema.
+
+Caso seja utilizada, deverá existir uma necessidade concreta que justifique sua aplicação.
+
+Sempre que uma análise puder ser realizada de maneira adequada por regras próprias do sistema, essa alternativa poderá ser considerada, especialmente por proporcionar maior controle e facilidade de explicação dos resultados.
+
+Dessa forma, a tecnologia deverá estar subordinada às necessidades do projeto, e não ser utilizada apenas para aumentar sua complexidade.
+
+---
+
+## 7.11 Diferencial em relação a abordagens tradicionais
+
+O Projeto1 buscará se diferenciar de abordagens que apresentam apenas um questionário e um resultado final relacionado a uma profissão.
+
+A proposta será trabalhar com uma sequência de etapas:
+
+**analisar → compreender → explorar → desenvolver → preparar**
+
+O estudante deverá receber não somente informações sobre possíveis áreas de interesse, mas também orientações relacionadas ao seu momento atual e possibilidades de desenvolvimento.
+
+Assim, o resultado da análise deverá funcionar como um **ponto de partida para o desenvolvimento profissional**, e não como uma conclusão definitiva sobre o futuro do estudante.
+
+---
+
+## 7.12 Síntese do diferencial
+
+O diferencial do Projeto1 poderá ser resumido pela combinação de quatro características principais:
+
+1. **orientação por áreas**, e não determinação de uma profissão;
+2. **análise conjunta de interesses, habilidades, competências e preferências de ambiente**;
+3. **trilhas de desenvolvimento adaptadas ao momento atual do estudante**;
+4. **integração entre orientação profissional e preparação para o mercado de trabalho**.
+
+A combinação desses elementos deverá permitir que a plataforma ofereça uma experiência mais voltada ao desenvolvimento do estudante, mantendo o caráter de orientação e evitando recomendações deterministas.
+
+---
+
+## 7.13 Definição final do diferencial
+
+Após a definição do escopo e do público-alvo, o diferencial do Projeto1 foi estabelecido como a proposta de **transformar a orientação profissional em um processo de desenvolvimento**, no qual o estudante não recebe apenas uma indicação de área, mas também compreende os fatores que contribuíram para essa compatibilidade e conhece possíveis caminhos para desenvolver suas habilidades, buscar formação e preparar-se para o mercado de trabalho.
+
+A plataforma deverá considerar principalmente a relação entre **interesse e habilidade**, juntamente com competências e preferências de ambiente de trabalho, para identificar diferentes situações e apresentar orientações compatíveis com o momento atual do estudante.
+
+Dessa forma, o Projeto1 pretende oferecer **possibilidades e caminhos**, e não determinar uma profissão ou estabelecer uma trajetória obrigatória.
+
+### Status do item
+
+**CONCLUÍDO — DEFINIÇÃO DO DIFERENCIAL DO PROJETO ESTRUTURADA.**
