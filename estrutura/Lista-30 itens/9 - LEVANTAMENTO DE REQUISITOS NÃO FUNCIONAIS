@@ -1,0 +1,281 @@
+# 8. LEVANTAMENTO DE REQUISITOS NÃO FUNCIONAIS
+
+## 8.1 Objetivo do levantamento
+
+O levantamento de requisitos não funcionais tem como objetivo definir características relacionadas à qualidade, segurança, usabilidade, desempenho, compatibilidade e funcionamento da plataforma.
+
+Diferentemente dos requisitos funcionais, que definem **o que o sistema deverá fazer**, os requisitos não funcionais estabelecem **como o sistema deverá funcionar e quais características deverá apresentar**.
+
+---
+
+## 8.2 Usabilidade
+
+A plataforma deverá ser simples, intuitiva e acessível para estudantes com diferentes níveis de familiaridade com informática.
+
+A interface deverá apresentar:
+
+* linguagem clara e compreensível;
+* organização adequada das informações;
+* botões facilmente identificáveis;
+* navegação intuitiva;
+* formulários simples de preencher;
+* feedback visual das ações realizadas;
+* resultados apresentados de forma compreensível.
+
+O usuário deverá conseguir utilizar as principais funcionalidades sem depender de instruções fornecidas diretamente pelos desenvolvedores.
+
+---
+
+## 8.3 Responsividade
+
+A plataforma deverá possuir uma interface responsiva, permitindo sua utilização em diferentes tamanhos de tela.
+
+O conteúdo deverá se adaptar adequadamente a:
+
+* computadores;
+* notebooks;
+* tablets;
+* smartphones.
+
+A responsividade deverá ser considerada durante o desenvolvimento da interface para garantir uma experiência adequada independentemente do dispositivo utilizado.
+
+---
+
+## 8.4 Desempenho
+
+O sistema deverá apresentar um desempenho adequado para as funcionalidades previstas.
+
+As operações principais, como:
+
+* login;
+* carregamento das páginas;
+* envio do questionário;
+* processamento das respostas;
+* apresentação dos resultados;
+* realização dos simulados;
+* consulta do histórico;
+
+deverão ocorrer sem atrasos desnecessários.
+
+O desempenho deverá ser considerado principalmente durante a utilização das funcionalidades principais da plataforma.
+
+---
+
+## 8.5 Segurança
+
+A plataforma deverá possuir mecanismos adequados para proteger as informações dos usuários.
+
+As senhas não deverão ser armazenadas em texto puro.
+
+Também deverão ser considerados mecanismos para:
+
+* autenticação dos usuários;
+* controle de acesso;
+* proteção de páginas privadas;
+* proteção dos resultados;
+* validação das informações recebidas;
+* prevenção de acesso aos dados de outras contas;
+* proteção do banco de dados.
+
+Os mecanismos técnicos específicos de segurança serão definidos durante a etapa de arquitetura e implementação.
+
+---
+
+## 8.6 Privacidade
+
+O sistema deverá seguir o princípio de minimização de dados, armazenando somente informações que possuam finalidade dentro da plataforma.
+
+Os dados coletados deverão estar relacionados às necessidades funcionais do sistema.
+
+Informações complementares, como idade, estado e cidade, somente deverão ser utilizadas caso sua finalidade seja definida e considerada necessária.
+
+Não deverá ser necessário armazenar informações como endereço residencial.
+
+---
+
+## 8.7 Privacidade dos resultados
+
+Os resultados obtidos pelo estudante deverão ser privados por padrão.
+
+As informações relacionadas ao perfil, análise e desempenho deverão ser acessíveis somente ao próprio usuário, de acordo com as regras de autenticação e controle de acesso.
+
+A plataforma não deverá criar inicialmente uma estrutura de compartilhamento público dos resultados.
+
+---
+
+## 8.8 Independência de serviços externos
+
+As funcionalidades essenciais da plataforma não deverão depender obrigatoriamente de serviços externos.
+
+O sistema deverá manter seu funcionamento principal mesmo quando recursos complementares, como serviços de inteligência artificial, estiverem indisponíveis.
+
+A inteligência artificial deverá ser tratada como um recurso complementar, principalmente para auxiliar o estudante na compreensão de perguntas, termos e situações apresentadas no sistema.
+
+---
+
+## 8.9 Disponibilidade
+
+A plataforma deverá estar disponível para utilização durante o desenvolvimento e apresentação do projeto.
+
+A hospedagem pública não será considerada uma dependência obrigatória para a conclusão do sistema.
+
+Caso a hospedagem pública não seja necessária ou apresente custos incompatíveis com o projeto, a plataforma deverá ser capaz de funcionar em ambiente local.
+
+A decisão definitiva sobre hospedagem será tomada durante a definição da arquitetura.
+
+---
+
+## 8.10 Compatibilidade
+
+A plataforma deverá ser desenvolvida utilizando tecnologias compatíveis com aplicações web e deverá funcionar adequadamente nos principais navegadores utilizados pelo público-alvo.
+
+A compatibilidade deverá ser considerada principalmente durante os testes da interface e das funcionalidades.
+
+---
+
+## 8.11 Manutenibilidade
+
+A estrutura do sistema deverá ser organizada de maneira que permita a realização de alterações, correções e melhorias durante o desenvolvimento.
+
+A organização do projeto deverá facilitar:
+
+* identificação dos componentes;
+* correção de problemas;
+* implementação de novas funcionalidades;
+* manutenção do código;
+* evolução da plataforma.
+
+A arquitetura definitiva e a organização técnica do projeto serão definidas em etapa posterior.
+
+---
+
+## 8.12 Escalabilidade
+
+A estrutura da plataforma deverá permitir futuras melhorias e expansão das funcionalidades sem exigir a reconstrução completa do sistema.
+
+Entretanto, a escalabilidade não deverá comprometer o prazo ou aumentar desnecessariamente a complexidade do projeto.
+
+Durante o desenvolvimento, deverá ser priorizado um sistema completo e funcional dentro das condições disponíveis.
+
+---
+
+## 8.13 Confiabilidade
+
+As funcionalidades principais deverão apresentar comportamento consistente durante sua utilização.
+
+O sistema deverá evitar:
+
+* perda desnecessária de dados;
+* resultados inconsistentes;
+* acesso indevido às informações;
+* falhas durante o envio de respostas;
+* comportamentos inesperados nas funcionalidades principais.
+
+Sempre que ocorrer uma falha, o sistema deverá fornecer informações compreensíveis ao usuário sempre que possível.
+
+---
+
+## 8.14 Inteligência artificial
+
+Caso a inteligência artificial seja implementada, seu funcionamento deverá respeitar as limitações definidas para o projeto.
+
+A IA deverá:
+
+* funcionar como recurso complementar;
+* auxiliar na compreensão de conteúdos;
+* possuir limites de utilização;
+* não responder o questionário pelo estudante;
+* não ser responsável pelo cálculo principal dos resultados;
+* não ser uma dependência crítica da plataforma.
+
+Os limites específicos, modelo utilizado, custo, quantidade de utilização e demais características técnicas serão definidos posteriormente.
+
+---
+
+## 8.15 Segurança e proteção das informações
+
+Além da proteção das credenciais, o sistema deverá impedir que um usuário consiga acessar informações pertencentes a outra conta.
+
+As informações relacionadas ao perfil, resultados e desempenho deverão estar associadas corretamente ao usuário responsável.
+
+A validação dos dados recebidos também deverá ser considerada para reduzir riscos de utilização incorreta ou maliciosa da plataforma.
+
+---
+
+## 8.16 Facilidade de compreensão
+
+As informações apresentadas pelo sistema deverão ser compreensíveis para estudantes do ensino médio.
+
+Os resultados não deverão utilizar termos excessivamente técnicos sem explicação.
+
+As recomendações deverão apresentar informações de maneira organizada, permitindo que o estudante compreenda:
+
+* quais áreas apresentaram compatibilidade;
+* quais características contribuíram para o resultado;
+* quais habilidades podem ser desenvolvidas;
+* quais caminhos podem ser explorados;
+* quais possibilidades de formação existem;
+* como pode se preparar para o mercado de trabalho.
+
+---
+
+## 8.17 Testes e validação
+
+Os requisitos não funcionais deverão ser avaliados durante os testes do sistema.
+
+Sempre que possível, pessoas que não participaram diretamente do desenvolvimento deverão utilizar a plataforma para verificar aspectos relacionados à usabilidade e compreensão.
+
+Os testes deverão observar principalmente:
+
+* facilidade de navegação;
+* clareza das informações;
+* responsividade;
+* funcionamento das funcionalidades;
+* compreensão dos resultados;
+* desempenho;
+* comportamento em diferentes dispositivos.
+
+Os resultados dos testes poderão gerar ajustes na interface, no fluxo de navegação e em outros aspectos da plataforma.
+
+---
+
+## 8.18 Prioridade dos requisitos não funcionais
+
+Considerando o prazo disponível e a capacidade técnica do grupo, os requisitos não funcionais deverão ser priorizados de acordo com sua importância para o funcionamento do sistema.
+
+As prioridades iniciais serão:
+
+1. **Segurança e privacidade** — proteção das contas e informações dos usuários.
+2. **Usabilidade** — facilidade de utilização da plataforma.
+3. **Responsividade** — adaptação aos diferentes dispositivos.
+4. **Confiabilidade** — funcionamento consistente das funcionalidades principais.
+5. **Desempenho** — respostas adequadas durante a utilização.
+6. **Manutenibilidade** — organização que facilite alterações e correções.
+7. **Compatibilidade** — funcionamento adequado em diferentes ambientes de acesso.
+8. **Escalabilidade** — possibilidade de evolução futura.
+
+Essa priorização deverá ser utilizada para evitar que requisitos secundários comprometam o desenvolvimento das funcionalidades essenciais.
+
+---
+
+## 8.19 Resumo dos requisitos não funcionais
+
+De maneira geral, a plataforma deverá ser:
+
+* **simples**, para facilitar sua utilização;
+* **intuitiva**, para reduzir a necessidade de instruções;
+* **responsiva**, para funcionar em diferentes dispositivos;
+* **segura**, para proteger as informações dos usuários;
+* **privada**, mantendo os resultados protegidos;
+* **confiável**, garantindo consistência nas funcionalidades;
+* **compatível**, permitindo utilização em diferentes navegadores;
+* **organizada**, facilitando sua manutenção;
+* **independente**, evitando dependências externas desnecessárias;
+* **expansível**, permitindo futuras melhorias;
+* **adequada ao público-alvo**, utilizando linguagem clara e acessível.
+
+---
+
+## Status do item
+
+**EM DEFINIÇÃO — LEVANTAMENTO DOS REQUISITOS NÃO FUNCIONAIS ESTRUTURADO.**
