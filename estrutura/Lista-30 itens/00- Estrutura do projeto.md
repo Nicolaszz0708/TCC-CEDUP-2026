@@ -12,7 +12,7 @@
 
 8. Levantamento de requisitos funcionais 🟨
 9. Levantamento de requisitos não funcionais 🟨
-10. Priorização das funcionalidades — MVP, intermediárias e extras
+10. Priorização das funcionalidades — MVP, intermediárias e extras✅
 11. Definição dos módulos do sistema
 
 ## FASE 3 — Planejamento da Inteligência do Sistema
