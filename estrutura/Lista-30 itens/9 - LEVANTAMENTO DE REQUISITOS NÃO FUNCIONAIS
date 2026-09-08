@@ -1,240 +1,264 @@
-8. LEVANTAMENTO DE REQUISITOS NÃO FUNCIONAIS
-8.1 Objetivo do levantamento
+# 8. LEVANTAMENTO DE REQUISITOS NÃO FUNCIONAIS
 
-O levantamento de requisitos não funcionais tem como objetivo definir características relacionadas à qualidade, segurança, usabilidade, desempenho, compatibilidade e funcionamento da plataforma.
+## 8.1 Objetivo
 
-Diferentemente dos requisitos funcionais, que definem o que o sistema deverá fazer, os requisitos não funcionais estabelecem como o sistema deverá funcionar e quais características deverá apresentar.
+Os requisitos não funcionais definem as características de qualidade, segurança, desempenho, usabilidade e funcionamento que o sistema deverá apresentar. Eles complementam os requisitos funcionais e estabelecem como o sistema deve funcionar, garantindo uma experiência adequada para as pessoas que irão utilizá-lo.
 
-8.2 Usabilidade
+---
 
-A plataforma deverá ser simples, intuitiva e acessível para estudantes com diferentes níveis de familiaridade com informática.
+## 8.2 Usabilidade
 
-A interface deverá apresentar:
+O sistema deverá apresentar uma interface simples, intuitiva e organizada, permitindo que estudantes, professores e demais pessoas envolvidas consigam utilizar suas funcionalidades sem dificuldades.
 
-linguagem clara e compreensível;
-organização adequada das informações;
-botões facilmente identificáveis;
-navegação intuitiva;
-formulários simples de preencher;
-feedback visual das ações realizadas;
-resultados apresentados de forma compreensível.
+**Requisitos:**
 
-O usuário deverá conseguir utilizar as principais funcionalidades sem depender de instruções fornecidas diretamente pelos desenvolvedores.
+* A navegação deverá ser simples e objetiva.
+* As informações deverão ser apresentadas de forma clara.
+* Os menus e botões deverão possuir identificação adequada.
+* As principais funcionalidades deverão ser facilmente encontradas.
+* O sistema deverá evitar excesso de informações desnecessárias na tela.
+* As mensagens apresentadas ao usuário deverão ser compreensíveis.
 
-8.3 Responsividade
+---
 
-A plataforma deverá possuir uma interface responsiva, permitindo sua utilização em diferentes tamanhos de tela.
+## 8.3 Responsividade
 
-O conteúdo deverá se adaptar adequadamente a:
+O sistema deverá possuir uma interface adaptável a diferentes tamanhos de tela.
 
-computadores;
-notebooks;
-tablets;
-smartphones.
+**Requisitos:**
 
-A responsividade deverá ser considerada durante o desenvolvimento da interface para garantir uma experiência adequada independentemente do dispositivo utilizado.
+* O sistema deverá funcionar em computadores, notebooks, tablets e celulares.
+* Os elementos da interface deverão se adaptar ao tamanho da tela.
+* Textos e botões deverão permanecer legíveis em diferentes resoluções.
+* A navegação deverá continuar funcional em dispositivos menores.
 
-8.4 Desempenho
+---
 
-O sistema deverá apresentar um desempenho adequado para as funcionalidades previstas.
+## 8.4 Desempenho
 
-As operações principais, como:
+O sistema deverá apresentar um desempenho adequado durante sua utilização.
 
-login;
-carregamento das páginas;
-envio do questionário;
-processamento das respostas;
-apresentação dos resultados;
-realização dos simulados;
-consulta do histórico;
+**Requisitos:**
 
-deverão ocorrer sem atrasos desnecessários.
+* As páginas deverão carregar em tempo adequado.
+* As operações realizadas pelo usuário deverão apresentar resposta sem atrasos excessivos.
+* O sistema deverá evitar processamento desnecessário.
+* Consultas ao banco de dados deverão ser realizadas de forma eficiente.
+* Os recursos utilizados pelo sistema deverão ser compatíveis com a proposta do projeto.
 
-O desempenho deverá ser considerado principalmente durante a utilização das funcionalidades principais da plataforma.
+---
 
-8.5 Segurança
+## 8.5 Segurança
 
-A plataforma deverá possuir mecanismos adequados para proteger as informações dos usuários.
+O sistema deverá possuir mecanismos básicos de segurança para proteger as informações armazenadas e impedir acessos não autorizados.
 
-As senhas não deverão ser armazenadas em texto puro.
+**Requisitos:**
 
-Também deverão ser considerados mecanismos para:
+* As senhas não deverão ser armazenadas em texto simples.
+* O acesso às áreas restritas deverá exigir autenticação.
+* As funcionalidades deverão respeitar as permissões de cada tipo de usuário.
+* O sistema deverá impedir acessos não autorizados às informações.
+* Os dados recebidos pelos formulários deverão ser validados.
+* O sistema deverá adotar medidas para reduzir riscos de ataques e manipulação indevida dos dados.
 
-autenticação dos usuários;
-controle de acesso;
-proteção de páginas privadas;
-proteção dos resultados;
-validação das informações recebidas;
-prevenção de acesso aos dados de outras contas;
-proteção do banco de dados.
+---
 
-Os mecanismos técnicos específicos de segurança serão definidos durante a etapa de arquitetura e implementação.
+## 8.6 Privacidade
 
-8.6 Privacidade
+O sistema deverá coletar somente as informações necessárias para o funcionamento de suas funcionalidades.
 
-O sistema deverá seguir o princípio de minimização de dados, armazenando somente informações que possuam finalidade dentro da plataforma.
+**Requisitos:**
 
-Os dados coletados deverão estar relacionados às necessidades funcionais do sistema.
+* Não deverão ser coletados dados desnecessários.
+* As informações pessoais deverão ser utilizadas somente dentro da finalidade definida pelo projeto.
+* O sistema não deverá exigir endereço residencial.
+* Informações opcionais somente deverão ser utilizadas caso exista uma finalidade definida para elas.
+* Os dados deverão possuir proteção adequada contra acesso indevido.
 
-Informações complementares, como idade, estado e cidade, somente deverão ser utilizadas caso sua finalidade seja definida e considerada necessária.
+---
 
-Não deverá ser necessário armazenar informações como endereço residencial.
+## 8.7 Privacidade dos Resultados
 
-8.7 Privacidade dos resultados
+As respostas dos questionários, análises de perfil e resultados obtidos durante a utilização do sistema deverão ser considerados informações privadas.
 
-Os resultados obtidos pelo estudante deverão ser privados por padrão.
+**Requisitos:**
 
-As informações relacionadas ao perfil, análise e desempenho deverão ser acessíveis somente ao próprio usuário, de acordo com as regras de autenticação e controle de acesso.
+* Os resultados deverão ser acessíveis somente ao usuário autorizado.
+* O sistema não deverá disponibilizar publicamente as respostas dos estudantes.
+* Informações de desempenho deverão possuir controle de acesso.
+* O compartilhamento de informações deverá ocorrer somente quando houver uma finalidade definida pelo sistema.
 
-A plataforma não deverá criar inicialmente uma estrutura de compartilhamento público dos resultados.
+---
 
-8.8 Independência de serviços externos
+## 8.8 Independência de Serviços Externos
 
-As funcionalidades essenciais da plataforma não deverão depender obrigatoriamente de serviços externos.
+O funcionamento principal do sistema deverá ser independente de serviços externos sempre que possível.
 
-O sistema deverá manter seu funcionamento principal mesmo quando recursos complementares, como serviços de inteligência artificial, estiverem indisponíveis.
+**Requisitos:**
 
-A inteligência artificial deverá ser tratada como um recurso complementar, principalmente para auxiliar o estudante na compreensão de perguntas, termos e situações apresentadas no sistema.
+* As funcionalidades essenciais não deverão depender obrigatoriamente de APIs externas.
+* O sistema deverá continuar funcionando mesmo quando recursos externos não estiverem disponíveis.
+* Serviços externos deverão ser utilizados somente quando forem realmente necessários.
+* A utilização de inteligência artificial não deverá ser obrigatória para o funcionamento principal do sistema.
 
-8.9 Disponibilidade
+---
 
-A plataforma deverá estar disponível para utilização durante o desenvolvimento e apresentação do projeto.
+## 8.9 Disponibilidade
 
-A hospedagem pública não será considerada uma dependência obrigatória para a conclusão do sistema.
+O sistema deverá permanecer disponível durante sua utilização dentro do ambiente definido para o projeto.
 
-Caso a hospedagem pública não seja necessária ou apresente custos incompatíveis com o projeto, a plataforma deverá ser capaz de funcionar em ambiente local.
+**Requisitos:**
 
-A decisão definitiva sobre hospedagem será tomada durante a definição da arquitetura.
+* O sistema deverá funcionar corretamente durante os testes e apresentações.
+* As funcionalidades principais deverão estar disponíveis quando necessárias.
+* O sistema deverá apresentar mensagens adequadas quando ocorrerem falhas.
+* Erros inesperados não deverão comprometer todo o funcionamento da aplicação.
 
-8.10 Compatibilidade
+---
 
-A plataforma deverá ser desenvolvida utilizando tecnologias compatíveis com aplicações web e deverá funcionar adequadamente nos principais navegadores utilizados pelo público-alvo.
+## 8.10 Compatibilidade
 
-A compatibilidade deverá ser considerada principalmente durante os testes da interface e das funcionalidades.
+O sistema deverá apresentar compatibilidade com os principais navegadores utilizados para acesso à aplicação.
 
-8.11 Manutenibilidade
+**Requisitos:**
 
-A estrutura do sistema deverá ser organizada de maneira que permita a realização de alterações, correções e melhorias durante o desenvolvimento.
+* O sistema deverá funcionar em navegadores modernos.
+* A interface deverá manter seu funcionamento independentemente do navegador compatível utilizado.
+* Recursos específicos de um único navegador deverão ser evitados quando não forem necessários.
 
-A organização do projeto deverá facilitar:
+---
 
-identificação dos componentes;
-correção de problemas;
-implementação de novas funcionalidades;
-manutenção do código;
-evolução da plataforma.
+## 8.11 Manutenibilidade
 
-A arquitetura definitiva e a organização técnica do projeto serão definidas em etapa posterior.
+O sistema deverá ser desenvolvido de forma organizada, facilitando futuras correções, atualizações e melhorias.
 
-8.12 Escalabilidade
+**Requisitos:**
 
-A estrutura da plataforma deverá permitir futuras melhorias e expansão das funcionalidades sem exigir a reconstrução completa do sistema.
+* O código deverá possuir organização adequada.
+* Os arquivos deverão ser separados de acordo com suas responsabilidades.
+* As funcionalidades deverão ser estruturadas de forma que possam ser modificadas sem afetar desnecessariamente outras partes do sistema.
+* O projeto deverá possuir documentação suficiente para facilitar sua manutenção.
+* Alterações futuras deverão respeitar o escopo definido para o projeto.
 
-Entretanto, a escalabilidade não deverá comprometer o prazo ou aumentar desnecessariamente a complexidade do projeto.
+---
 
-Durante o desenvolvimento, deverá ser priorizado um sistema completo e funcional dentro das condições disponíveis.
+## 8.12 Escalabilidade
 
-8.13 Confiabilidade
+O sistema deverá possuir uma estrutura que permita futuras melhorias e expansão de funcionalidades.
 
-As funcionalidades principais deverão apresentar comportamento consistente durante sua utilização.
+**Requisitos:**
 
-O sistema deverá evitar:
+* A estrutura deverá permitir a inclusão de novas funcionalidades.
+* O banco de dados deverá ser organizado de maneira adequada para futuras expansões.
+* Novos conteúdos, questionários e simulados poderão ser adicionados posteriormente.
+* A arquitetura deverá evitar dependências desnecessárias que dificultem futuras alterações.
 
-perda desnecessária de dados;
-resultados inconsistentes;
-acesso indevido às informações;
-falhas durante o envio de respostas;
-comportamentos inesperados nas funcionalidades principais.
+---
 
-Sempre que ocorrer uma falha, o sistema deverá fornecer informações compreensíveis ao usuário sempre que possível.
+## 8.13 Confiabilidade
 
-8.14 Inteligência artificial
+O sistema deverá apresentar resultados consistentes de acordo com as informações fornecidas pelo usuário e com as regras definidas para a análise.
 
-Caso a inteligência artificial seja implementada, seu funcionamento deverá respeitar as limitações definidas para o projeto.
+**Requisitos:**
 
-A IA deverá:
+* As informações cadastradas deverão ser armazenadas corretamente.
+* As respostas do questionário deverão ser processadas de acordo com as regras estabelecidas.
+* Os resultados deverão permanecer consistentes durante diferentes acessos.
+* Erros de processamento deverão ser tratados adequadamente.
+* O sistema deverá evitar perda ou alteração indevida das informações.
 
-funcionar como recurso complementar;
-auxiliar na compreensão de conteúdos;
-possuir limites de utilização;
-não responder o questionário pelo estudante;
-não ser responsável pelo cálculo principal dos resultados;
-não ser uma dependência crítica da plataforma.
+---
 
-Os limites específicos, modelo utilizado, custo, quantidade de utilização e demais características técnicas serão definidos posteriormente.
+## 8.14 Inteligência Artificial
 
-8.15 Segurança e proteção das informações
+A inteligência artificial, caso seja utilizada, deverá atuar como recurso complementar ao sistema.
 
-Além da proteção das credenciais, o sistema deverá impedir que um usuário consiga acessar informações pertencentes a outra conta.
+**Requisitos:**
 
-As informações relacionadas ao perfil, resultados e desempenho deverão estar associadas corretamente ao usuário responsável.
+* A IA não deverá ser indispensável para o funcionamento das principais funcionalidades.
+* A IA poderá auxiliar na explicação de perguntas e termos.
+* A IA poderá auxiliar em situações relacionadas às simulações.
+* A IA não deverá responder o questionário pelo estudante.
+* A IA não deverá determinar uma profissão para o usuário.
+* A utilização da IA deverá respeitar os limites e custos definidos para o projeto.
 
-A validação dos dados recebidos também deverá ser considerada para reduzir riscos de utilização incorreta ou maliciosa da plataforma.
+---
 
-8.16 Facilidade de compreensão
+## 8.15 Segurança e Proteção das Informações
 
-As informações apresentadas pelo sistema deverão ser compreensíveis para estudantes do ensino médio.
+Além da autenticação, o sistema deverá adotar medidas para proteger as informações armazenadas.
 
-Os resultados não deverão utilizar termos excessivamente técnicos sem explicação.
+**Requisitos:**
 
-As recomendações deverão apresentar informações de maneira organizada, permitindo que o estudante compreenda:
+* As credenciais deverão possuir proteção adequada.
+* O acesso às informações deverá ser controlado.
+* Dados de usuários não deverão ser expostos desnecessariamente.
+* As informações deverão ser armazenadas de maneira adequada no banco de dados.
+* O sistema deverá validar informações antes de armazená-las ou processá-las.
 
-quais áreas apresentaram compatibilidade;
-quais características contribuíram para o resultado;
-quais habilidades podem ser desenvolvidas;
-quais caminhos podem ser explorados;
-quais possibilidades de formação existem;
-como pode se preparar para o mercado de trabalho.
-8.17 Testes e validação
+---
 
-Os requisitos não funcionais deverão ser avaliados durante os testes do sistema.
+## 8.16 Facilidade de Compreensão
 
-Sempre que possível, pessoas que não participaram diretamente do desenvolvimento deverão utilizar a plataforma para verificar aspectos relacionados à usabilidade e compreensão.
+O sistema deverá utilizar uma linguagem adequada ao seu público-alvo, principalmente estudantes do ensino médio.
 
-Os testes deverão observar principalmente:
+**Requisitos:**
 
-facilidade de navegação;
-clareza das informações;
-responsividade;
-funcionamento das funcionalidades;
-compreensão dos resultados;
-desempenho;
-comportamento em diferentes dispositivos.
+* Os textos deverão ser claros e objetivos.
+* Termos técnicos deverão ser explicados quando necessários.
+* As instruções deverão ser fáceis de compreender.
+* O sistema deverá evitar linguagem excessivamente complexa.
+* As orientações deverão apresentar informações suficientes para que o usuário compreenda o que deve fazer.
 
-Os resultados dos testes poderão gerar ajustes na interface, no fluxo de navegação e em outros aspectos da plataforma.
+---
 
-8.18 Prioridade dos requisitos não funcionais
+## 8.17 Testes e Validação
 
-Considerando o prazo disponível e a capacidade técnica do grupo, os requisitos não funcionais deverão ser priorizados de acordo com sua importância para o funcionamento do sistema.
+O sistema deverá ser submetido a testes durante seu desenvolvimento para verificar se as funcionalidades e características definidas estão funcionando corretamente.
 
-As prioridades iniciais serão:
+**Requisitos:**
 
-Segurança e privacidade — proteção das contas e informações dos usuários.
-Usabilidade — facilidade de utilização da plataforma.
-Responsividade — adaptação aos diferentes dispositivos.
-Confiabilidade — funcionamento consistente das funcionalidades principais.
-Desempenho — respostas adequadas durante a utilização.
-Manutenibilidade — organização que facilite alterações e correções.
-Compatibilidade — funcionamento adequado em diferentes ambientes de acesso.
-Escalabilidade — possibilidade de evolução futura.
+* As principais funcionalidades deverão ser testadas.
+* Erros encontrados deverão ser registrados e corrigidos.
+* A interface deverá ser avaliada por pessoas que representem o público-alvo.
+* O sistema deverá ser validado antes da entrega final.
+* Os testes deverão verificar tanto o funcionamento quanto a facilidade de utilização.
 
-Essa priorização deverá ser utilizada para evitar que requisitos secundários comprometam o desenvolvimento das funcionalidades essenciais.
+---
 
-8.19 Resumo dos requisitos não funcionais
+## 8.18 Prioridade dos Requisitos Não Funcionais
 
-De maneira geral, a plataforma deverá ser:
+Os requisitos não funcionais deverão possuir diferentes níveis de prioridade de acordo com sua importância para o funcionamento do projeto.
 
-simples, para facilitar sua utilização;
-intuitiva, para reduzir a necessidade de instruções;
-responsiva, para funcionar em diferentes dispositivos;
-segura, para proteger as informações dos usuários;
-privada, mantendo os resultados protegidos;
-confiável, garantindo consistência nas funcionalidades;
-compatível, permitindo utilização em diferentes navegadores;
-organizada, facilitando sua manutenção;
-independente, evitando dependências externas desnecessárias;
-expansível, permitindo futuras melhorias;
-adequada ao público-alvo, utilizando linguagem clara e acessível.
-Status do item
+| Requisito                          | Prioridade |
+| ---------------------------------- | ---------- |
+| Segurança                          | Alta       |
+| Privacidade                        | Alta       |
+| Usabilidade                        | Alta       |
+| Confiabilidade                     | Alta       |
+| Desempenho                         | Média      |
+| Responsividade                     | Média      |
+| Compatibilidade                    | Média      |
+| Manutenibilidade                   | Média      |
+| Independência de serviços externos | Média      |
+| Escalabilidade                     | Média      |
+| Inteligência Artificial            | Baixa      |
+| Disponibilidade                    | Média      |
 
-EM DEFINIÇÃO — LEVANTAMENTO DOS REQUISITOS NÃO FUNCIONAIS ESTRUTURADO.
+A segurança, privacidade, usabilidade e confiabilidade possuem maior prioridade por estarem diretamente relacionadas ao funcionamento adequado e à proteção das informações dos usuários.
+
+A inteligência artificial possui prioridade menor porque é considerada uma funcionalidade complementar e não deve ser necessária para o funcionamento principal do sistema.
+
+---
+
+## 8.19 Resumo
+
+Os requisitos não funcionais estabelecem as características necessárias para que o sistema seja seguro, confiável, acessível, compreensível e adequado ao público-alvo.
+
+O projeto deverá priorizar principalmente **segurança, privacidade, usabilidade e confiabilidade**, mantendo uma estrutura organizada que permita futuras melhorias.
+
+Além disso, o sistema deverá evitar dependências desnecessárias de serviços externos e manter a inteligência artificial como um recurso complementar, caso sua utilização seja considerada necessária.
+
+---
+
+**Status:** 🟡 **EM DEFINIÇÃO — LEVANTAMENTO DOS REQUISITOS NÃO FUNCIONAIS ESTRUTURADO.**
