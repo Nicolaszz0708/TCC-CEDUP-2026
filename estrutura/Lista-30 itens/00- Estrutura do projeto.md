@@ -17,7 +17,7 @@
 
 ## FASE 3 — Planejamento da Inteligência do Sistema
 
-12. Definição dos perfis profissionais
+12. Definição dos perfis profissionais✅
 13. Definição da metodologia de análise de perfil
 14. Definição da lógica do questionário vocacional
 15. Estruturação das perguntas e pontuações
