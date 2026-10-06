@@ -1,264 +1,62 @@
-# 8. LEVANTAMENTO DE REQUISITOS NÃO FUNCIONAIS
+# 9. LEVANTAMENTO DE REQUISITOS NÃO FUNCIONAIS (RNF)
 
-## 8.1 Objetivo
-
-Os requisitos não funcionais definem as características de qualidade, segurança, desempenho, usabilidade e funcionamento que o sistema deverá apresentar. Eles complementam os requisitos funcionais e estabelecem como o sistema deve funcionar, garantindo uma experiência adequada para as pessoas que irão utilizá-lo.
+Este documento reúne os requisitos não funcionais (RNF) definidos a partir do documento de mudanças e encaminhamentos (seções 5.11, 5.13, 5.14 e 5.15) e das discussões realizadas na etapa de planejamento. A numeração é sequencial e global, não organizada por módulo.
 
 ---
 
-## 8.2 Usabilidade
+## 9.1 Segurança
 
-O sistema deverá apresentar uma interface simples, intuitiva e organizada, permitindo que estudantes, professores e demais pessoas envolvidas consigam utilizar suas funcionalidades sem dificuldades.
-
-**Requisitos:**
-
-* A navegação deverá ser simples e objetiva.
-* As informações deverão ser apresentadas de forma clara.
-* Os menus e botões deverão possuir identificação adequada.
-* As principais funcionalidades deverão ser facilmente encontradas.
-* O sistema deverá evitar excesso de informações desnecessárias na tela.
-* As mensagens apresentadas ao usuário deverão ser compreensíveis.
+* **RNF01** — Senhas devem ser armazenadas com hash, nunca em texto puro.
+* **RNF02** — O sistema deve impedir que um usuário autenticado acesse dados de outra conta.
+* **RNF03** — Páginas que exigem autenticação devem redirecionar usuários não autenticados para a tela de login.
 
 ---
 
-## 8.3 Responsividade
+## 9.2 Privacidade
 
-O sistema deverá possuir uma interface adaptável a diferentes tamanhos de tela.
-
-**Requisitos:**
-
-* O sistema deverá funcionar em computadores, notebooks, tablets e celulares.
-* Os elementos da interface deverão se adaptar ao tamanho da tela.
-* Textos e botões deverão permanecer legíveis em diferentes resoluções.
-* A navegação deverá continuar funcional em dispositivos menores.
+* **RNF04** — Resultados, respostas do questionário e desempenho em simulados são privados por padrão, visíveis apenas ao próprio estudante.
+* **RNF05** — Não haverá funcionalidade de compartilhamento de dados entre usuários nesta versão do projeto.
 
 ---
 
-## 8.4 Desempenho
+## 9.3 Disponibilidade e independência de serviços externos
 
-O sistema deverá apresentar um desempenho adequado durante sua utilização.
-
-**Requisitos:**
-
-* As páginas deverão carregar em tempo adequado.
-* As operações realizadas pelo usuário deverão apresentar resposta sem atrasos excessivos.
-* O sistema deverá evitar processamento desnecessário.
-* Consultas ao banco de dados deverão ser realizadas de forma eficiente.
-* Os recursos utilizados pelo sistema deverão ser compatíveis com a proposta do projeto.
+* **RNF06** — As funcionalidades principais da plataforma (cadastro, login, questionário, cálculo de resultado, trilhas, simulados) devem funcionar de forma independente de serviços externos.
+* **RNF07** — Em caso de indisponibilidade da IA complementar (chatbot de apoio), o restante do sistema deve continuar funcionando normalmente.
 
 ---
 
-## 8.5 Segurança
+## 9.4 Usabilidade
 
-O sistema deverá possuir mecanismos básicos de segurança para proteger as informações armazenadas e impedir acessos não autorizados.
-
-**Requisitos:**
-
-* As senhas não deverão ser armazenadas em texto simples.
-* O acesso às áreas restritas deverá exigir autenticação.
-* As funcionalidades deverão respeitar as permissões de cada tipo de usuário.
-* O sistema deverá impedir acessos não autorizados às informações.
-* Os dados recebidos pelos formulários deverão ser validados.
-* O sistema deverá adotar medidas para reduzir riscos de ataques e manipulação indevida dos dados.
+* **RNF08** — Um estudante sem experiência prévia com o sistema deve conseguir concluir uma etapa do questionário sem necessidade de assistência externa.
+* **RNF09** — As interações principais (envio de resposta, navegação entre etapas, exibição de resultado) devem fornecer feedback visual imediato ao usuário (ex.: destaque de seleção, indicador de carregamento).
 
 ---
 
-## 8.6 Privacidade
+## 9.5 Performance
 
-O sistema deverá coletar somente as informações necessárias para o funcionamento de suas funcionalidades.
-
-**Requisitos:**
-
-* Não deverão ser coletados dados desnecessários.
-* As informações pessoais deverão ser utilizadas somente dentro da finalidade definida pelo projeto.
-* O sistema não deverá exigir endereço residencial.
-* Informações opcionais somente deverão ser utilizadas caso exista uma finalidade definida para elas.
-* Os dados deverão possuir proteção adequada contra acesso indevido.
+* **RNF10** — Interações leves (navegação, envio de resposta individual) devem responder em tempo perceptivamente imediato. Operações mais pesadas (cálculo do resultado do perfil ao final do questionário, carregamento do simulado) devem ser concluídas em até 3 a 5 segundos.
 
 ---
 
-## 8.7 Privacidade dos Resultados
+## 9.6 Infraestrutura e stack tecnológica
 
-As respostas dos questionários, análises de perfil e resultados obtidos durante a utilização do sistema deverão ser considerados informações privadas.
+* **RNF11** — O sistema deve ser executável em ambiente local (localhost) para fins de desenvolvimento, testes e apresentação do TCC. Necessidade de disponibilização pública será avaliada posteriormente.
+* **RNF12** — O sistema deve ser desenvolvido utilizando React (frontend, com renderização condicional entre telas, sem uso de biblioteca de rotas), Node.js com Express (backend), PostgreSQL acessado via queries SQL diretas com a biblioteca `pg` (persistência), bcrypt (hash de senha) e JWT (autenticação).
+* **RNF13** — O sistema poderá ser disponibilizado publicamente (frontend, backend e banco de dados hospedados em serviços de nuvem), com custo total mensal do grupo limitado a R$50. A escolha definitiva dos provedores de hospedagem será revisada e confirmada na etapa de implantação, verificando preços e condições vigentes no momento.
 
-**Requisitos:**
+### Nota de decisão
 
-* Os resultados deverão ser acessíveis somente ao usuário autorizado.
-* O sistema não deverá disponibilizar publicamente as respostas dos estudantes.
-* Informações de desempenho deverão possuir controle de acesso.
-* O compartilhamento de informações deverá ocorrer somente quando houver uma finalidade definida pelo sistema.
-
----
-
-## 8.8 Independência de Serviços Externos
-
-O funcionamento principal do sistema deverá ser independente de serviços externos sempre que possível.
-
-**Requisitos:**
-
-* As funcionalidades essenciais não deverão depender obrigatoriamente de APIs externas.
-* O sistema deverá continuar funcionando mesmo quando recursos externos não estiverem disponíveis.
-* Serviços externos deverão ser utilizados somente quando forem realmente necessários.
-* A utilização de inteligência artificial não deverá ser obrigatória para o funcionamento principal do sistema.
+> As tecnologias React Router e Prisma ORM foram avaliadas e descartadas em favor de alternativas com menor curva de aprendizagem (renderização condicional simples e queries SQL diretas via `pg`, respectivamente), considerando que a equipe parte de uma base de conhecimento limitada a JavaScript, HTML e CSS puros. A stack completa depende de apoio de professores para o aprendizado das tecnologias ainda não dominadas pela equipe; 1 a 2 integrantes ficarão responsáveis pela parte técnica mais pesada (backend/banco), enquanto os demais focam em outras frentes do projeto.
 
 ---
 
-## 8.9 Disponibilidade
+## 9.7 Conteúdo gerado com auxílio de inteligência artificial
 
-O sistema deverá permanecer disponível durante sua utilização dentro do ambiente definido para o projeto.
-
-**Requisitos:**
-
-* O sistema deverá funcionar corretamente durante os testes e apresentações.
-* As funcionalidades principais deverão estar disponíveis quando necessárias.
-* O sistema deverá apresentar mensagens adequadas quando ocorrerem falhas.
-* Erros inesperados não deverão comprometer todo o funcionamento da aplicação.
+* **RNF14** — Conteúdo textual gerado com auxílio de inteligência artificial (lista de áreas profissionais, pesos de contribuição por pergunta, conteúdo das trilhas de desenvolvimento) deve ser revisado pela equipe antes de ser publicado na plataforma.
 
 ---
 
-## 8.10 Compatibilidade
+## Status do item
 
-O sistema deverá apresentar compatibilidade com os principais navegadores utilizados para acesso à aplicação.
-
-**Requisitos:**
-
-* O sistema deverá funcionar em navegadores modernos.
-* A interface deverá manter seu funcionamento independentemente do navegador compatível utilizado.
-* Recursos específicos de um único navegador deverão ser evitados quando não forem necessários.
-
----
-
-## 8.11 Manutenibilidade
-
-O sistema deverá ser desenvolvido de forma organizada, facilitando futuras correções, atualizações e melhorias.
-
-**Requisitos:**
-
-* O código deverá possuir organização adequada.
-* Os arquivos deverão ser separados de acordo com suas responsabilidades.
-* As funcionalidades deverão ser estruturadas de forma que possam ser modificadas sem afetar desnecessariamente outras partes do sistema.
-* O projeto deverá possuir documentação suficiente para facilitar sua manutenção.
-* Alterações futuras deverão respeitar o escopo definido para o projeto.
-
----
-
-## 8.12 Escalabilidade
-
-O sistema deverá possuir uma estrutura que permita futuras melhorias e expansão de funcionalidades.
-
-**Requisitos:**
-
-* A estrutura deverá permitir a inclusão de novas funcionalidades.
-* O banco de dados deverá ser organizado de maneira adequada para futuras expansões.
-* Novos conteúdos, questionários e simulados poderão ser adicionados posteriormente.
-* A arquitetura deverá evitar dependências desnecessárias que dificultem futuras alterações.
-
----
-
-## 8.13 Confiabilidade
-
-O sistema deverá apresentar resultados consistentes de acordo com as informações fornecidas pelo usuário e com as regras definidas para a análise.
-
-**Requisitos:**
-
-* As informações cadastradas deverão ser armazenadas corretamente.
-* As respostas do questionário deverão ser processadas de acordo com as regras estabelecidas.
-* Os resultados deverão permanecer consistentes durante diferentes acessos.
-* Erros de processamento deverão ser tratados adequadamente.
-* O sistema deverá evitar perda ou alteração indevida das informações.
-
----
-
-## 8.14 Inteligência Artificial
-
-A inteligência artificial, caso seja utilizada, deverá atuar como recurso complementar ao sistema.
-
-**Requisitos:**
-
-* A IA não deverá ser indispensável para o funcionamento das principais funcionalidades.
-* A IA poderá auxiliar na explicação de perguntas e termos.
-* A IA poderá auxiliar em situações relacionadas às simulações.
-* A IA não deverá responder o questionário pelo estudante.
-* A IA não deverá determinar uma profissão para o usuário.
-* A utilização da IA deverá respeitar os limites e custos definidos para o projeto.
-
----
-
-## 8.15 Segurança e Proteção das Informações
-
-Além da autenticação, o sistema deverá adotar medidas para proteger as informações armazenadas.
-
-**Requisitos:**
-
-* As credenciais deverão possuir proteção adequada.
-* O acesso às informações deverá ser controlado.
-* Dados de usuários não deverão ser expostos desnecessariamente.
-* As informações deverão ser armazenadas de maneira adequada no banco de dados.
-* O sistema deverá validar informações antes de armazená-las ou processá-las.
-
----
-
-## 8.16 Facilidade de Compreensão
-
-O sistema deverá utilizar uma linguagem adequada ao seu público-alvo, principalmente estudantes do ensino médio.
-
-**Requisitos:**
-
-* Os textos deverão ser claros e objetivos.
-* Termos técnicos deverão ser explicados quando necessários.
-* As instruções deverão ser fáceis de compreender.
-* O sistema deverá evitar linguagem excessivamente complexa.
-* As orientações deverão apresentar informações suficientes para que o usuário compreenda o que deve fazer.
-
----
-
-## 8.17 Testes e Validação
-
-O sistema deverá ser submetido a testes durante seu desenvolvimento para verificar se as funcionalidades e características definidas estão funcionando corretamente.
-
-**Requisitos:**
-
-* As principais funcionalidades deverão ser testadas.
-* Erros encontrados deverão ser registrados e corrigidos.
-* A interface deverá ser avaliada por pessoas que representem o público-alvo.
-* O sistema deverá ser validado antes da entrega final.
-* Os testes deverão verificar tanto o funcionamento quanto a facilidade de utilização.
-
----
-
-## 8.18 Prioridade dos Requisitos Não Funcionais
-
-Os requisitos não funcionais deverão possuir diferentes níveis de prioridade de acordo com sua importância para o funcionamento do projeto.
-
-| Requisito                          | Prioridade |
-| ---------------------------------- | ---------- |
-| Segurança                          | Alta       |
-| Privacidade                        | Alta       |
-| Usabilidade                        | Alta       |
-| Confiabilidade                     | Alta       |
-| Desempenho                         | Média      |
-| Responsividade                     | Média      |
-| Compatibilidade                    | Média      |
-| Manutenibilidade                   | Média      |
-| Independência de serviços externos | Média      |
-| Escalabilidade                     | Média      |
-| Inteligência Artificial            | Baixa      |
-| Disponibilidade                    | Média      |
-
-A segurança, privacidade, usabilidade e confiabilidade possuem maior prioridade por estarem diretamente relacionadas ao funcionamento adequado e à proteção das informações dos usuários.
-
-A inteligência artificial possui prioridade menor porque é considerada uma funcionalidade complementar e não deve ser necessária para o funcionamento principal do sistema.
-
----
-
-## 8.19 Resumo
-
-Os requisitos não funcionais estabelecem as características necessárias para que o sistema seja seguro, confiável, acessível, compreensível e adequado ao público-alvo.
-
-O projeto deverá priorizar principalmente **segurança, privacidade, usabilidade e confiabilidade**, mantendo uma estrutura organizada que permita futuras melhorias.
-
-Além disso, o sistema deverá evitar dependências desnecessárias de serviços externos e manter a inteligência artificial como um recurso complementar, caso sua utilização seja considerada necessária.
-
----
-
-**Status:** 🟡 **EM DEFINIÇÃO — LEVANTAMENTO DOS REQUISITOS NÃO FUNCIONAIS ESTRUTURADO.**
+**EM DEFINIÇÃO — REQUISITOS NÃO FUNCIONAIS COMPLETOS (SEGURANÇA, PRIVACIDADE, DISPONIBILIDADE, USABILIDADE, PERFORMANCE, INFRAESTRUTURA/STACK, CONTEÚDO GERADO POR IA).**
