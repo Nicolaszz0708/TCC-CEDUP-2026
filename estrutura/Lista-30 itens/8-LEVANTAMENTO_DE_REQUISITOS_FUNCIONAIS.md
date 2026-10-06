@@ -48,6 +48,7 @@ Requisitos que dependem de decisões ainda não fechadas em itens posteriores da
 * **RF22** — O estudante deve poder alterar respostas de qualquer etapa já concluída, a qualquer momento, enquanto não tiver confirmado a finalização do questionário (RF19). Após a confirmação, as respostas ficam bloqueadas.
 * **RF23** — O sistema deve exibir uma barra de progresso indicando o avanço na etapa atual e o estado geral das etapas (concluída, em andamento, bloqueada).
 * **RF24** — Não haverá salvamento parcial do questionário. Caso o estudante tente sair de uma etapa em andamento por meio de navegação interna do site (menu, botão voltar, etc.) antes de concluí-la, o sistema deve exibir um aviso informando que o progresso daquela etapa será perdido. Não é necessário detectar o fechamento da aba ou do navegador.
+* **RF42** — O sistema deve manter histórico das últimas 5 tentativas de preenchimento do questionário por estudante, permitindo repetição ilimitada do questionário. A trilha de desenvolvimento exibida deve sempre refletir o resultado da tentativa mais recente.
 
 ---
 
@@ -82,15 +83,21 @@ Requisitos que dependem de decisões ainda não fechadas em itens posteriores da
 
 ---
 
-## 8.6 Pendências gerais que atravessam múltiplos requisitos
+## 8.6 Currículo e redação
+
+* **RF43** — O sistema deve disponibilizar conteúdo estático de apoio sobre elaboração de currículo e de redação (exemplos, boas práticas, passo a passo), sem interação do estudante além de navegação e leitura, e sem avaliação ou correção automática desses conteúdos.
+
+---
+
+## 8.7 Pendências gerais que atravessam múltiplos requisitos
 
 * Lista definitiva de áreas profissionais — item 12. Afeta RF12, RF14 e RF32.
 * Quantidade de perguntas por etapa do questionário — item 15. Afeta RF17 e RF20.
 * Fórmula matemática completa e thresholds de compatibilidade — item 16. Afeta RF14 e RF25–RF27.
-* Conteúdo gerado com auxílio de inteligência artificial (lista de áreas, pesos de contribuição por pergunta, conteúdo de trilhas) será revisado e ajustado pela equipe antes de entrar em produção. Nota repetida em RF12, RF15 e RF29 — a ser consolidada como requisito não funcional único no item 9.
+* Conteúdo gerado com auxílio de inteligência artificial (lista de áreas, pesos de contribuição por pergunta, conteúdo de trilhas) deve ser revisado e ajustado pela equipe antes de entrar em produção — consolidado como RNF14 no item 9.
 
 ---
 
 ## Status do item
 
-**EM DEFINIÇÃO — REQUISITOS FUNCIONAIS COMPLETOS (CADASTRO, PERFIL/METODOLOGIA, QUESTIONÁRIO, RESULTADO/TRILHAS, SIMULADOS). PENDÊNCIAS REGISTRADAS NA SEÇÃO 8.6.**
+**EM DEFINIÇÃO — REQUISITOS FUNCIONAIS COMPLETOS (CADASTRO, PERFIL/METODOLOGIA, QUESTIONÁRIO, RESULTADO/TRILHAS, SIMULADOS, CURRÍCULO/REDAÇÃO). PENDÊNCIAS REGISTRADAS NA SEÇÃO 8.7.**
