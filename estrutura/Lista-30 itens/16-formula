@@ -1,0 +1,18 @@
+# 16. Fórmula matemática
+
+Aqui está a parte mais importante.
+
+Os pesos definidos inicialmente são:
+
+- **Interesses = 35%**
+- **Habilidades = 35%**
+- **Competências = 20%**
+- **Preferências = não entram diretamente na porcentagem**
+
+Como **35 + 35 + 20 = 90%**, não é possível utilizar esses valores diretamente como uma porcentagem final. Por isso, os três pilares serão **normalizados para 100%**.
+
+A fórmula será:
+
+```math
+Compatibilidade =
+\frac{I \times 35 + H \times 35 + C \times 20}{90}
